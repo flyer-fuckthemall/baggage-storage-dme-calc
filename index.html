@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Калькулятор хранения багажа</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="form">
+		<form name="time" class=" flex-container">
+			<div class="flexLeft">
+				<div>
+					<input type="datetime-local" name="firstTime">
+				</div>
+				<div>
+					<input type="datetime-local" name="secondTime">
+				</div>
+				<div>
+					<input type="number" name="baggage" min="1" step="1" placeholder="багаж">
+				</div>
+				<div>
+					<input type="number" name="clothes" min="1" step="1" placeholder="одежда">
+				</div>
+				<div>
+					<input type="button" name="btn" onclick="calc()" value="посчитать" required>
+				</div>
+			</div>
+			<div class="flexRight">
+				<div>
+					<label for="resultBaggage">Стоимость хранения багажа</label>
+					<input type="text" name="resultBaggage" id="resultBaggage">
+				</div>
+				<div>
+					<label for="resultClothes">Стоимость хранения одежды</label>
+					<input type="text" name="resultClothes" id="resultClothes">
+				</div>
+				<div>
+					<label for="resultTotal">Общая стоимость хранения</label>
+					<input type="text" name="resultTotal" id="resultTotal">
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
+
+
+
+
+
